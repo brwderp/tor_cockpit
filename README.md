@@ -13,4 +13,4 @@ This script automatically installs and configures remote access via tor for Ubun
     sudo su - (username)
     tor
 # To get url:
-    sudo cat /home/(username)/hidden_service/hostname
+    sudo cat /home/(username)/hidden_service/hostname # In the browser add :9090 to the end of the URL.
