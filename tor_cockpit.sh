@@ -12,8 +12,6 @@ if [[ $doing -eq "1" ]]; then
 	echo "Enter username for new user: "
 	read username
 	adduser $username
-	# mkdir /home/$username
-	# useradd -d /home/$username -s /bin/bash $username
 fi
 
 if [[ $doing -eq "0" ]]; then 
