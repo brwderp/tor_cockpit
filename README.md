@@ -8,7 +8,7 @@ This script automatically installs and configures remote access via tor for Ubun
     cd tor_cockpit
     chmod +x tor_cockpit.sh
     ./tor_cockpit.sh
-# Starting
+# Starting (after reboot, you need to enter each time)
     sudo systemctl start cockpit.socket
     sudo su - (username)
     tor
