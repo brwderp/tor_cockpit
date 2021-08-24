@@ -36,6 +36,9 @@ if [[ $doing -eq "0" ]]; then
 	echo "HiddenServiceDir $directory" >> /etc/tor/torrc
 else
 	echo "HiddenServiceDir /home/$username/hidden_service" >> /etc/tor/torrc
+	mkdir /home/$username/hidden_service
+	chown $username /home/$username/hidden_service
+	chmod 700 /home/$username/hidden_service
 fi
 echo "HiddenServicePort 9090 127.0.0.1:9090" >> /etc/tor/torrc
 
